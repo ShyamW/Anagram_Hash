@@ -1,9 +1,17 @@
-
 public class MainApplication {
+    /**
+     * Private Constructor
+     */
+    private MainApplication() {
+    }
+
+    /**
+     * Main Method, Standard MVC
+     */
     public static void main(String[] args) {
-        AnagramHash num1 = new AnagramHash("racecarpizza");
-        System.out.println(num1.value);
-        AnagramHash num2 = new AnagramHash("pzziacarrace");
-        System.out.println(num2.value);
+        Model model = new Model();
+        View view = new View();
+        Controller controller = new Controller(model, view);
+        view.registerObserver(controller);
     }
 }

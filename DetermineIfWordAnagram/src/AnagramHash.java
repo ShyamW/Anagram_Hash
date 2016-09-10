@@ -1,5 +1,15 @@
 import java.util.HashMap;
 
+/**
+ * Class used to determine if strings are anagrams of each other. Performance is
+ * O(n) since each letter in the word is assigned a prime number and then
+ * multiplied together to assign a word a unique hashed value.
+ *
+ * @author Shyam Thiagarajan
+ *
+ * @credit to Alex Chan for Idea
+ *
+ */
 public class AnagramHash {
     /**
      * instance variables

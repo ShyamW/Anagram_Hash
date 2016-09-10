@@ -1,7 +1,9 @@
 import java.util.HashMap;
 
 public class AnagramHash {
-    // instance variables
+    /**
+     * instance variables
+     */
     private String lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
     private String word;
     public int value;
@@ -9,7 +11,7 @@ public class AnagramHash {
 
     /**
      * Public constructor that takes {@code scrambledWord} and initializes
-     * {@code lowercaseLetters}.
+     * {@code word}.
      *
      * @param scrambledWord
      *            String of scrambled word
@@ -61,13 +63,13 @@ public class AnagramHash {
     }
 
     /**
-     * Prints the HashMap Value of {@code this.value}.
+     * Prints the HashMap key (letter) and value (prime integer).
      *
      * @param map
      *            HashMap of Integer to Character
      */
-    private void print(HashMap<Integer, Character> map) {
-        for (Integer letter : map.keySet()) {
+    public void print(HashMap<Integer, Character> map) {
+        for (Character letter : this.lettersToPrime.keySet()) {
             System.out.println("KEY " + letter + ", Value: " + map.get(letter));
         }
     }

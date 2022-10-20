@@ -6,3 +6,4 @@ The algorithm assigns each alphabetical letter a prime number and then multiplie
 Currently: The program hashes scrambles
 
 Future Plans: The program will hash a scramble and then provide suggested unscrambled words
+ 
